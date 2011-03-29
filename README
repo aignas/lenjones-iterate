@@ -1,3 +1,13 @@
-Actual author of the thing: Giedrius Q
+Actual author of the thing: Giedrius Kudelis
+             Just a helper: Ignas Anikevicius
 
-Leonard-Jones Potential simulation just to learn C++ and fiddle arround.
+The simulation of gas particles in a container
+  by using Leonard-Jones potential equations.
+
+TODO:
+    * Number crunching in C++
+    * Implement Runge-Kutta algorithm
+    * Implement Walls to the container
+    * Show how macroscopic properties of the gas are
+      changing during the simulated time period.
+    * Visualize everything using Python
