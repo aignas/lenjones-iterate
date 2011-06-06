@@ -5,8 +5,8 @@ Actual author of the thing: Giedrius Kudelis
 
 Purpose:
 --------
-The simulation of gas particles in a container
-  by using Leonard-Jones potential equations.
+The simulation of gas particles in a container by using Leonard-Jones potential 
+equations. This is just for fun and learning C++.
 
 TODO:
 ----
@@ -21,14 +21,17 @@ TODO:
         the particle and assume, that all other particles are also randomly 
         distributed and the net force due to the calculated interactions is the 
         same, but larger for all interactions?
+
 Graphical side:
 --------------
     * Visualize everything using Matplotlib
+    * Generate a movie from pngs.
+
 Aditional things to try:
 ------------------------
     * Try to implement the heating mechanism, where the particles interacting with
         the walls of the container would gain kinetic energy, and thus, they would
         increase the temperature of the gas cloud.
     * Try to do some quantum computation for monoatomic gases (like Helium).
-    * Try to implement everything in Cython (and Sage) and see whether it is any 
-        faster.
+    * Try to implement everything in Cython (and SAGE) and see whether it is any 
+        faster. NOTE: SAGE has it's own animation mechanism.
