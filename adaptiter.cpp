@@ -11,6 +11,8 @@ using namespace std;
 #define WIDTH 100
 #define HEIGHT 4
 
+#define SIGMA 1
+#define EPSILON 1
 #define DEFAULT_STEP 1.0
 #define MAX_VELOCITY_CHANGE 0.001
 #define MASS 0.001
@@ -125,7 +127,7 @@ inline vector2d get_force(vector2d on, vector2d by) {
     vector2d force;
 
     double r = sqrt((on.x-by.x)*(on.x-by.x) + (on.y-by.y)*(on.y-by.y));
-    double f = 24*(pow(r,6) - 2) / pow(r,13);
+    double f = 24*EPSILON*pow(SIGMA,6)*(pow(r,6) - 2*pow(SIGMA,6)) / pow(r,13);
 
     force.x = (f/r)*(on.x - by.x);
     force.y = (f/r)*(on.y - by.y);
